@@ -1,0 +1,16 @@
+{
+    "name": "toki",
+    "version": "0.0.0",
+    "scripts": {
+        "build": "docker build -t toki.api.package .",
+        "exec": "docker run -v D:/web/toki/src:/usr/node/toki/src -p 3002:3000 --name TOKI-API-PACK toki.api.package",
+        "start": "node ./bin/www"
+    },
+    "dependencies": {
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "express": "~4.16.1",
+        "http-errors": "~1.6.3",
+        "morgan": "~1.9.1"
+    }
+}
